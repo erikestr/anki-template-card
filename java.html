@@ -1,0 +1,130 @@
+<div class="container">
+
+    <div class="column">
+
+        <article class="answer-main">
+            <h2 class="m-x-0"><span>El orden de los factores no altera el producto</span></h2>
+            <p class="m-x-0 m-t-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid delectus in, non
+                repudiandae
+                amet et cum saepe inventore vel esse. Dicta sapiente voluptas non adipisci ipsam commodi eligendi minus
+                iste!</p>
+        </article>
+    </div>
+    <div class="column">
+        <article class="code-java">
+            <ol type="1">
+                <li>Coffee</li>
+                <li>Tea</li>
+                <li>Milk</li>
+            </ol>
+        </article>
+    </div>
+
+</div>
+
+<style>
+    @property --color-backgroud {
+        syntax: "<color>";
+        inherits: false;
+        initial-value: #0E0033;
+    }
+
+    @property --eucalyptus-green {
+        syntax: "<color>";
+        inherits: false;
+        initial-value: #32EA8E;
+    }
+
+    @property --medium-aquamarine-green {
+        syntax: "<color>";
+        inherits: false;
+        initial-value: #5beea5;
+    }
+
+    @property --color-text {
+        syntax: "<color>";
+        inherits: false;
+        initial-value: #daccff;
+    }
+
+@property --color-gray {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #a3a3a3;
+}
+
+    body {
+        background-color: var(--color-backgroud);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: #fff;
+    }
+
+    h2 {
+        text-align: center;
+        font-size: large;
+        color: var(--color-text);
+        text-shadow: var(--eucalyptus-green) 0 0 1rem;
+    }
+
+    span {
+        position: relative;
+        top: 1px;
+        display: inline-block;
+        border-bottom: 0.2rem solid var(--eucalyptus-green);
+        border-radius: 0.2rem;
+    }
+
+    p {
+        color: var(--color-text);
+        text-shadow: var(--eucalyptus-green) 0 0 0.4rem;
+    }
+
+    ul {
+        list-style: none;
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+    li {
+        font-size: xx-small;
+        width: 100%;
+        color: var(--color-gray);
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .column {
+        flex: 1;        
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .answer-main {
+        border-radius: 1.8rem;
+        border: solid var(--eucalyptus-green) 0.4rem;
+        padding: 2rem;
+    }
+
+    .m-x-0 {
+        margin-top: 0rem;
+        margin-bottom: 0rem;
+    }
+
+    .m-t-1 {
+        margin-top: 1rem;
+    }
+
+    .m-b-1 {
+        margin-bottom: 1rem;
+    }
+
+    .code-java{
+        color: var(--color-text);
+        border-radius: 1.8rem;
+        border: solid var(--color-gray) 0.4rem;
+        padding: 2rem;
+    }
+</style>
