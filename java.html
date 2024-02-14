@@ -12,10 +12,29 @@
     </div>
     <div class="column">
         <article class="code-java">
-            <ol type="1">
-                <li>Coffee</li>
-                <li>Tea</li>
-                <li>Milk</li>
+            <h3 class="m-x-0 m-b-1">Java</h3>
+            <ol type="1" class=" m-x-0">
+                <li>
+                    <pre>   public class Test {</pre>
+                </li>
+                <li>
+                    <pre>       String pStrLOCAL;</pre>
+                </li>
+                <li>
+                    <pre></pre>
+                </li>
+                <li>
+                    <pre>       public static void main(String... args) {</pre>
+                </li>
+                <li>
+                    <pre>           pStrLOCAL = "Test String";</pre>
+                </li>
+                <li>
+                    <pre>       }</pre>
+                </li>
+                <li>
+                    <pre>   }</pre>
+                </li>
             </ol>
         </article>
     </div>
@@ -47,11 +66,11 @@
         initial-value: #daccff;
     }
 
-@property --color-gray {
-    syntax: "<color>";
-    inherits: false;
-    initial-value: #a3a3a3;
-}
+    @property --color-gray {
+        syntax: "<color>";
+        inherits: false;
+        initial-value: #a3a3a3;
+    }
 
     body {
         background-color: var(--color-backgroud);
@@ -91,13 +110,17 @@
         color: var(--color-gray);
     }
 
+    pre {
+        margin: 0;
+    }
+
     .container {
         display: flex;
         flex-direction: column;
     }
 
     .column {
-        flex: 1;        
+        flex: 1;
         margin-top: 1rem;
         margin-bottom: 1rem;
     }
@@ -121,7 +144,7 @@
         margin-bottom: 1rem;
     }
 
-    .code-java{
+    .code-java {
         color: var(--color-text);
         border-radius: 1.8rem;
         border: solid var(--color-gray) 0.4rem;
