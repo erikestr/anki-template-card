@@ -1,7 +1,6 @@
 <div class="container">
 
     <div class="column">
-
         <article class="answer-main">
             <h2 class="m-x-0"><span>El orden de los factores no altera el producto</span></h2>
             <p class="m-x-0 m-t-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid delectus in, non
@@ -10,6 +9,7 @@
                 iste!</p>
         </article>
     </div>
+
     <div class="column">
         <article class="code-java">
             <h3 class="m-x-0 m-b-1">Java</h3>
@@ -39,37 +39,50 @@
         </article>
     </div>
 
+    <div class="column">
+        <article class="example1">
+            <div class="example2">
+                <div class="example3">
+                    <h2 class="m-x-0"><span>title</span></h2>
+                    <p class="m-x-0 m-t-1-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla, accusamus
+                        perspiciatis veniam accusantium quas optio nesciunt eligendi, itaque eaque magnam iure, placeat
+                        vero adipisci cupiditate unde consequuntur neque repellendus ipsam.</p>
+                </div>
+            </div>
+        </article>
+    </div>
+
 </div>
 
 <style>
-    @property --color-backgroud {
-        syntax: "<color>";
-        inherits: false;
-        initial-value: #0E0033;
+    :root {
+        --color-backgroud: #0E0033;
+        --eucalyptus-green: #32EA8E;
+        --medium-aquamarine-green: #5beea5;
+        --color-text: #daccff;
+        --color-gray: #a3a3a3;
+
+        --border-card: 1.8rem;
+        --padding-inner-card: 0.5rem;
+        --padding-inner-card-description: 0.8rem;
+        --border-inner-card: calc(var(--border-card) - 0.5rem);
     }
 
-    @property --eucalyptus-green {
-        syntax: "<color>";
-        inherits: false;
-        initial-value: #32EA8E;
+    .example1 {
+        border-radius: var(--border-card);
+        background: rgb(50, 234, 142);
+        background: linear-gradient(45deg, rgba(50, 234, 142, 1) 0%, rgba(218, 204, 255, 1) 100%);
+        padding: var(--padding-inner-card);
     }
 
-    @property --medium-aquamarine-green {
-        syntax: "<color>";
-        inherits: false;
-        initial-value: #5beea5;
+    .example2 {
+        background-color: #f55353;
+        border-radius: var(--border-inner-card);
+        padding: var(--padding-inner-card-description);
     }
 
-    @property --color-text {
-        syntax: "<color>";
-        inherits: false;
-        initial-value: #daccff;
-    }
-
-    @property --color-gray {
-        syntax: "<color>";
-        inherits: false;
-        initial-value: #a3a3a3;
+    .example3 {
+        background-color: #fff;
     }
 
     body {
@@ -126,7 +139,7 @@
     }
 
     .answer-main {
-        border-radius: 1.8rem;
+        border-radius: var(--border-card);
         border: solid var(--eucalyptus-green) 0.4rem;
         padding: 2rem;
     }
@@ -134,6 +147,10 @@
     .m-x-0 {
         margin-top: 0rem;
         margin-bottom: 0rem;
+    }
+
+    .m-t-1-2 {
+        margin-top: 0.5rem;
     }
 
     .m-t-1 {
