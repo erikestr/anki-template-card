@@ -4,20 +4,14 @@
     <div class="column">
         <article class="es-art-container">
             <div class="es-art-content">
-                <h2 class="es-answer m-x-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
-                    et hic esse, natus optio asperiores! <span>Pariatur fugiat deleniti</span>, eius corporis molestias
-                    repellat
-                    iure. A cumque veniam, suscipit harum beatae rerum.</h2>
-                <p class="es-description m-x-0 m-t-1-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla,
-                    accusamus
-                    perspiciatis veniam accusantium quas optio nesciunt eligendi, itaque eaque magnam iure, placeat
-                    vero adipisci cupiditate unde consequuntur neque repellendus ipsam.</p>
+                <h2 class="es-answer m-x-0">${answer}</h2>
+                <p class="es-description m-x-0 m-t-1-2">${description}</p>
             </div>
         </article>
     </div>
 
     <!-- Example complement with Code -->
-    <div class="column">
+    <!-- <div class="column">
         <article class="es-art-container-code">
             <div class="es-art-content-code">
                 <h3 class="es-code-lang m-x-0 m-b-1">Java</h3>
@@ -197,7 +191,7 @@
                 </ol>
             </div>
         </article>
-    </div>
+    </div> -->
 
 </div>
 
@@ -347,6 +341,18 @@
         background-color: var(--color-backgroud);
         border-radius: var(--border-inner-card);
         padding: var(--padding-inner-card-description);
+    }
+
+    .es-question {
+        text-align: center;
+        font-size: x-large;
+        color: var(--color-purple-400);
+        text-shadow: var(--color-green) 0 0 1rem;
+    }
+
+    .es-question span {
+        border-bottom: 0.16rem solid var(--color-green);
+        border-radius: 0.2rem;
     }
 
     .es-answer {
